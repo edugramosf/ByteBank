@@ -4,12 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ByteBank
+namespace DesafioFranquiaFastFood
 {
     public class Cliente
     {
         public string nome;
         public string cpf;
-        public string profissao;
+        public string email;
+        public Endereco endereco;
     }
 }
