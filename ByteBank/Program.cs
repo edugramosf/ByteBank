@@ -65,5 +65,5 @@
 using ByteBank.Contas;
 
 ContaCorrente conta3 = new ContaCorrente();
-conta3.DefinirSaldo(200);
-Console.WriteLine(conta3.ObterSaldo());
+conta3.SetSaldo(200);
+Console.WriteLine(conta3.GetSaldo());
