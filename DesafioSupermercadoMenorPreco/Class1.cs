@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ByteBank
 {
-    internal class DesafioSupermercadoMenorPreco
+    public class DesafioSupermercadoMenorPreco
     {
         public string nome;
         public string fabricante;

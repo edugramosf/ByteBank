@@ -11,7 +11,7 @@ namespace ByteBank
         public int numero_Agencia;
         public string conta;
         public string titular;
-        public double saldo;
+        public double saldo = 100;
 
         public void Depositar(double valor)
         {
@@ -33,12 +33,21 @@ namespace ByteBank
             if(this.saldo < valor)
             {
                 return false;
-            } else
+            } 
+            else
             {
-                this.saldo -= valor;
-                destino.saldo += valor;
+                this.Sacar(valor);
+                destino.Depositar(valor);
                 return true;
             }
+        }
+
+        public void ExibirDadosDaConta()
+        {
+            Console.WriteLine("Titular: " + titular);
+            Console.WriteLine("Conta: " + conta);
+            Console.WriteLine("Número e Agência: " + numero_Agencia);
+            Console.WriteLine("Saldo: " + saldo);
         }
         
     }
