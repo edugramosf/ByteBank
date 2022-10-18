@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using ByteBank.Titular;
@@ -11,7 +12,7 @@ namespace ByteBank.Contas
     {
         public int numero_Agencia;
         public string conta;
-        public double saldo = 100;
+        private double saldo = 100;
 
         public Cliente titular;
 
@@ -43,6 +44,23 @@ namespace ByteBank.Contas
                 return true;
             }
         }
+
+        public void DefinirSaldo(double valor)
+        {
+            if(valor < 0)
+            {
+                return;
+            }
+            else
+            {
+                this.saldo = valor;
+            }
+
+        }
+            public double ObterSaldo()
+            {
+                return this.saldo;
+            } 
 
         public void ExibirDadosDaConta()
         {
