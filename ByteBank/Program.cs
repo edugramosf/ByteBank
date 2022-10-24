@@ -65,5 +65,9 @@
 using ByteBank.Contas;
 
 ContaCorrente conta3 = new ContaCorrente();
+conta3.Numero_Agencia = 18;
+conta3.Conta = "1011-H";
 conta3.SetSaldo(200);
 Console.WriteLine(conta3.GetSaldo());
+Console.WriteLine(conta3.Numero_Agencia);
+Console.WriteLine(conta3.Conta);
