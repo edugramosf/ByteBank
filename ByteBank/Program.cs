@@ -62,12 +62,58 @@
 
 //Console.WriteLine(conta2.titular.nome);
 
-using ByteBank.Contas;
 
-ContaCorrente conta3 = new ContaCorrente();
-conta3.Numero_Agencia = 18;
-conta3.Conta = "1011-H";
-conta3.SetSaldo(200);
-Console.WriteLine(conta3.GetSaldo());
-Console.WriteLine(conta3.Numero_Agencia);
-Console.WriteLine(conta3.Conta);
+//ContaCorrente conta3 = new ContaCorrente();
+//conta3.Numero_Agencia = 18;
+//conta3.Conta = "1011-H";
+//conta3.SetSaldo(200);
+//Console.WriteLine(conta3.GetSaldo());
+//Console.WriteLine(conta3.Numero_Agencia);
+//Console.WriteLine(conta3.Conta);
+
+
+//ContaCorrente conta4 = new ContaCorrente(18, "1010-X");
+//conta4.SetSaldo(500);
+//conta4.Titular = new Cliente();
+
+//Console.WriteLine(conta4.GetSaldo());
+//Console.WriteLine(conta4.Numero_Agencia);
+
+using ByteBank.Contas;
+using ByteBank.Titular;
+
+Cliente cliente5 = new Cliente("Márcio Castro", "12345543-26", "Analista de Processos");
+ContaCorrente conta5 = new ContaCorrente(283, "1234-X", 1500, cliente5);
+Console.WriteLine(ContaCorrente.TotalDeContasCriadas);
+
+Console.WriteLine(cliente5.Nome);
+Console.WriteLine(cliente5.Cpf);
+Console.WriteLine(cliente5.Profissao);
+Console.WriteLine(conta5.Numero_Agencia);
+Console.WriteLine(conta5.Conta);
+Console.WriteLine(conta5.GetSaldo());
+Console.WriteLine();
+
+Cliente cliente6 = new Cliente("Delmira Cunha", "987567321-98", "Analista de Suporte");
+ContaCorrente conta6 = new ContaCorrente(284, "9874-Z", 15, cliente6);
+Console.WriteLine(ContaCorrente.TotalDeContasCriadas);
+
+Console.WriteLine(cliente6.Nome);
+Console.WriteLine(cliente6.Cpf);
+Console.WriteLine(cliente6.Profissao);
+Console.WriteLine(conta6.Numero_Agencia);
+Console.WriteLine(conta6.Conta);
+Console.WriteLine(conta6.GetSaldo());
+Console.WriteLine();
+
+Cliente cliente7 = new Cliente("João Kléber", "756432875-34", "Desenvolvedor de Software");
+ContaCorrente conta7 = new ContaCorrente(285, "1111-Z", 2889, cliente7);
+Console.WriteLine(ContaCorrente.TotalDeContasCriadas);
+
+Console.WriteLine(cliente7.Nome);
+Console.WriteLine(cliente7.Cpf);
+Console.WriteLine(cliente7.Profissao);
+Console.WriteLine(conta7.Numero_Agencia);
+Console.WriteLine(conta7.Conta);
+Console.WriteLine(conta7.GetSaldo());
+Console.WriteLine();

@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesafioSistemaMedico", "Des
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesafioSupermercadoMenorPreco", "DesafioSupermercadoMenorPreco\DesafioSupermercadoMenorPreco.csproj", "{3131C364-3490-4E59-A38A-705D7ECC7A1A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesafioFranquiaFastFood", "DesafioFranquiaFastFood\DesafioFranquiaFastFood.csproj", "{EA1C4857-30FF-44ED-852A-D0AD2F176113}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesafioFranquiaFastFood", "DesafioFranquiaFastFood\DesafioFranquiaFastFood.csproj", "{EA1C4857-30FF-44ED-852A-D0AD2F176113}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesafioEncapsulamentoValidacaoMatricula", "DesafioEncapsulamentoValidacaoMatricula\DesafioEncapsulamentoValidacaoMatricula.csproj", "{0823A3C4-2D11-4D07-8355-884248FD53F8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{EA1C4857-30FF-44ED-852A-D0AD2F176113}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EA1C4857-30FF-44ED-852A-D0AD2F176113}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EA1C4857-30FF-44ED-852A-D0AD2F176113}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0823A3C4-2D11-4D07-8355-884248FD53F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0823A3C4-2D11-4D07-8355-884248FD53F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0823A3C4-2D11-4D07-8355-884248FD53F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0823A3C4-2D11-4D07-8355-884248FD53F8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
